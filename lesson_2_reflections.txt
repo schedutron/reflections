@@ -3,3 +3,12 @@ Answer:
 When I initialize a git repo, a hidden directory named ".git" gets saved in my repo. This directory is used to store the
 metadata associated with this repo, like commit history. I need to initialize a repo so that I can start keeping track
 of the files in my repo; so that I have version control over my repository.
+
+Q2: How is the staging area different from the working directory and the repository? What value do you think it offers?
+Answer:
+Working directory contains files which are both being tracked and not being tracked. It's just a usual directory. Staging
+area contains only those files which are to be tracked. It contains only those files which you specify to be tracked. It
+is useful because you don't want to always track all your files in your repo. In other words, the staging area contains
+those files which together fit a specific commit. In contrast to this, a repository contains just commits. A repository
+is but a series of commits, with the most recent commit being visible to the human eye, whereas the previous commits
+become part of the repo's history metadata.
