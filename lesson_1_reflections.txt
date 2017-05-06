@@ -1,0 +1,51 @@
+Q1: How did viewing a diff between two different versions of a file help you see the bug that was introduced?
+
+Answer:
+Using diff enabled me to filter out only those locations (line numbers) in the two files where the content was different.
+So in the first example, diff pinpointed me the location where 1 was mistakenly typed as !. This was a considerably
+difficult-to-be-detected typo. But diff allowed for correction in a snap! In the second example, diff similarly pointed
+out the 'spacr' typo, by showing that the 'up' line was removed and the 'spacr' line was added (using - and +).
+
+Q2: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Answer:
+If, at some point of time, I create a buggy update for my program and am unable to fix the bugs, I can revert back to a
+previous, working version of my program conveniently if I have easy access to the entire history of my program's source
+code. This is easier than manually removing the lines of added code, and it is safer as well, because manual deletion
+has risks of removing working code as well. Also, the entire history would allow me to infer my development patterns.
+
+Q3: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having
+versions automatically saved, like Google Docs does?
+
+Answer:
+Usability of manual commits is subject to self-discipline. A user may not make commits for a long period of time, not
+saving important large changes. Or s/he may commit too often, thereby making history more cluttered. However, manual
+commits give much more flexibility over automatic saving if the user commits wisely. The user can commit whenever s/he
+feels that a logical unit has been added/changed. The user should commit whenever s/he feels appropriate. Only
+significant commits allow for convenient going through of history. Cons of using automatic saving are that they can
+make non-necessary saves/commits and can make your history cluttered. Many of the saves may not even make sense and
+compile. Manual commits work great in that they avoid such bad stuff to happen, if performed wisely.
+
+Q4: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others,
+like Google Docs, treat each file separately?
+
+Answer:
+Git was designed keeping programmers in mind. In programming, distributing your work across different files is common.
+So it often happens that you use code from one file in another file. Thus, changing code in one file can directly
+effect behavior of another file, and can require changes in the other file. So a commit should have the capability
+to save multiple files. Changes are often spread out across multiple files. If one makes a change in one file, and
+then makes a commit, the other file may not compile properly (as it also requires adaptive changes). Hence, a commit
+should contain multiple files. On the other hand, Google Docs saves files individually because changes in one
+document are mostly not linked to changes in other documents.
+
+Q5: How might using version control make you more confident to make changes that could break something?
+
+Answer:
+Using version control gives me more confidence in making larger changes that could break things because even if the
+changes I made break the program I'm working on, I can conveniently get back to an earlier, working version of my
+repo by checking out that specific commit using Git.
+
+Q6: Now that you have your workspace set up, what do you want to try using Git for?
+Answer:
+I would like to incorporate the power of Git in developing my current projects - keeping track of their development
+history, and exploring potentially fundamental changes I hadn't thought of before.
