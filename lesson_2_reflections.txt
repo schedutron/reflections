@@ -11,6 +11,14 @@ area contains only those files which are to be tracked. It contains only those f
 is useful because you don't want to always track all your files in your repo. In other words, the staging area contains
 those files which together fit a specific commit. In contrast to this, a repository contains just commits. A repository
 is but a series of commits, with the most recent commit being visible to the human eye, whereas the previous commits
-become part of the repo's history metadata. [When you check your commits, say, after a year, it would be easy for you to 
+become part of the repo's history metadata. [When you check your commits, say, after a year, it would be easy for you to
 determine the files where you made your changes for this specific commit if you used the staging area to group the files
 to be changed in one commit. Without the staging area, it may be harder for you to determine where you made the changes.]
+
+Q3: How can you use the staging area to make sure you have one commit per logical change?
+Answer:
+Staging area allows me to group some of the changed files in my working directory so that they all get committed as a
+single unit. As mentioned in lesson 1, a change may spread out over several files, so you add all such files to the
+staging area and then commit them, and the rest of the files, which were not part of the change, can be committed after
+that, if they too are to be changed. Thus the staging area allows the logical grouping of files which comprise one
+logical change, so that such files are committed together. This enables me to make one commit per logical change.
