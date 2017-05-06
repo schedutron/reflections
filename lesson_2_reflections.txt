@@ -11,4 +11,6 @@ area contains only those files which are to be tracked. It contains only those f
 is useful because you don't want to always track all your files in your repo. In other words, the staging area contains
 those files which together fit a specific commit. In contrast to this, a repository contains just commits. A repository
 is but a series of commits, with the most recent commit being visible to the human eye, whereas the previous commits
-become part of the repo's history metadata.
+become part of the repo's history metadata. [When you check your commits, say, after a year, it would be easy for you to 
+determine the files where you made your changes for this specific commit if you used the staging area to group the files
+to be changed in one commit. Without the staging area, it may be harder for you to determine where you made the changes.]
