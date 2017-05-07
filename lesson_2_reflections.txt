@@ -41,3 +41,13 @@ which contains production quality code that never breaks, then there is a Spanis
 of the Spanish version of our product is taking place, and then there is a mobile version branch where our product is
 getting ready for the mobile platform, and so on. Diagrams give us a "big picture" view of our repo, showing the
 activity all around, not just the activity of our checked out branch.
+
+Q6: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Answer:
+When we merge two branches, all of the changes in all of the commits of the two branches get saved in one single
+commit whose parents are the tips of the two branches. This commit contains all the changes accomplished in the two
+branches. It is labelled as the part of that branch which was initially checked out. After this commit,
+if we run the git log command, we'd see the commits from both the branches, in an interleaved manner, sorted by
+timestamp. In diagrams, we represent merging of two branches as combining the two branches into one commit. We do this
+as this most precisely represents what actually happens - the changes from both the branches get merged into one.
+Later, we build upon this commit.
