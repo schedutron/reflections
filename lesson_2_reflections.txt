@@ -22,3 +22,13 @@ single unit. As mentioned in lesson 1, a change may spread out over several file
 staging area and then commit them, and the rest of the files, which were not part of the change, can be committed after
 that, if they too are to be changed. Thus the staging area allows the logical grouping of files which comprise one
 logical change, so that such files are committed together. This enables me to make one commit per logical change.
+
+Q4: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Answer:
+Branches help a lot. For example, if I want to try an experimental feature, but at the same time I want to keep my
+existing code working, I can "branch out" of my existing master branch (master is the name given to the main branch by
+Git) to work on the feature, while the existing code would remain on the master branch. The branch for experimenting
+on the feature would also contain the previous commits. Branches help in keeping my history organized because they allow
+me to separate out different featured versions distinctly so that I can focus on any specific version at one time without
+affecting the other versions. This allows for keeping the history of each version relevant, to the point, without
+interfering other versions' histories.
