@@ -32,3 +32,12 @@ on the feature would also contain the previous commits. Branches help in keeping
 me to separate out different featured versions distinctly so that I can focus on any specific version at one time without
 affecting the other versions. This allows for keeping the history of each version relevant, to the point, without
 interfering other versions' histories.
+
+Q5: How do the diagrams help you visualize the branch structure?
+Answer:
+Diagrams help in getting an idea of how the history of our repository looks like. They also give us a sense of the
+development activities taking place in our repo. For example, diagrams show us that our project has a master branch,
+which contains production quality code that never breaks, then there is a Spanish version branch where the development
+of the Spanish version of our product is taking place, and then there is a mobile version branch where our product is
+getting ready for the mobile platform, and so on. Diagrams give us a "big picture" view of our repo, showing the
+activity all around, not just the activity of our checked out branch.
