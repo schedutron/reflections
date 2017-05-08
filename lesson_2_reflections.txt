@@ -51,3 +51,14 @@ if we run the git log command, we'd see the commits from both the branches, in a
 timestamp. In diagrams, we represent merging of two branches as combining the two branches into one commit. We do this
 as this most precisely represents what actually happens - the changes from both the branches get merged into one.
 Later, we build upon this commit.
+
+Q7: What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+Answer:
+Git manages to merge branches automatically a lot of times, which is actually quite awesome and powerful. But, conflicts
+can arise, e.g,  when two branches change the same part of a file. In such a case, Git can't identify which change to prefer.
+Here, Git notifies us about the conflict. It doesn't merge the branches, and asks us to resolve this conflict. It
+highlights the conflicting areas of the affected files, so that it's easier for us to resolve the issue(s). Once the
+issues are resolved, we can commit as usual and the merge would be successful. Had Git been forcing us to always merge
+branches manually, it would be quite inefficient and tedious. It would've taken unnecessarily more time to commit even
+simplest of merges. At the same time, had Git merged automatically all the times, even in cases of potential conflicts,
+we may've ran into bad issues - e.g, absurd code which wouldn't compile.
