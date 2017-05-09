@@ -11,3 +11,21 @@ I want to always pull changes manually so that my local repo doesn't get updated
 Manual pulling would allow me to pull multiple commits together. Furthermore, if I'm working on one branch locally and
 changes are being made to a different branch on remote, automatic pull would mix the two branches together locally even
 though that was not what I wanted. It may lead to unnecessary merging and would create unwanted conflicts.
+
+Q3: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Answer:
+If I want to create a spinoff of someone's repo on GitHub, I fork that repo. Forking copies that repo to a new repo
+of the same name in my profile, and this process happens directly on GitHub's servers. I don't have to do an intermediate
+clone to my local machine and then push this local repo to a new remote. Forking also has the advantage that a forked
+repo links back to the original repo in the original author's profile. This allows for the acknowledgement of the original
+author and comparison between the spinoff and the original repo. I clone a repo when I want to download a repo to my
+computer. Then, the repo I clone from automatically becomes the remote repo (named 'origin') for my local repo. I can
+also clone a repo from my computer to a different location within the computer itself. I create a new branch for my
+project when I want to maintain parallel but different versions of my project. Branching may create an illusion of
+being an alternative to forking. But the author of the original repo may not want collaboration yet, so s/he may not
+want others to branch out in her/his repo (s/he can by the way, choose which collaborators to allow working on her/his
+project). Also, the original repo may already be under collaboration, so it may already contain multiple branches.
+Branching out for customized spinoffs may now create confusion as to who's a collaborator and who's just present for
+spinoffs. It might also be tedious to track lots of people with different branching purposes. So for stuff like
+spinoffs, forking is used. Also, forking and cloning operate on entire repos while branching operates on commits
+within a single repository.
