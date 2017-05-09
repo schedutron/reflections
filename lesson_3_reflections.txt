@@ -1,5 +1,13 @@
 Q1: When would you want to use a remote repository rather than keeping all your work local?
 Answer:
-I would want to use a remote repo rather than keeping all my work local when I would want to share my project with others, so 
-that they can provide suggestions and collaborate with me on the project. Also, I would like to have a remote repo as a backup 
+I would want to use a remote repo rather than keeping all my work local when I would want to share my project with others, so
+that they can provide suggestions and collaborate with me on the project. Also, I would like to have a remote repo as a backup
 so that my project is safe in GitHub servers (if I save my 'remote' on GitHub) even if I somehow lose the local project repo.
+
+Q2: Why might you want to always pull changes manually rather than having Git automatically stat up-to-date with your
+remote repository?
+Answer:
+I want to always pull changes manually so that my local repo doesn't get updated every time a commit is made on remote.
+Manual pulling would allow me to pull multiple commits together. Furthermore, if I'm working on one branch locally and
+changes are being made to a different branch on remote, automatic pull would mix the two branches together locally even
+though that was not what I wanted. It may lead to unnecessary merging and would create unwanted conflicts.
