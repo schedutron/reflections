@@ -14,6 +14,8 @@ is but a series of commits, with the most recent commit being visible to the hum
 become part of the repo's history metadata. [When you check your commits, say, after a year, it would be easy for you to
 determine the files where you made your changes for this specific commit if you used the staging area to group the files
 to be changed in one commit. Without the staging area, it may be harder for you to determine where you made the changes.]
+The value of staging area is that it allows us to have a place to check that we are doing what we really intend to do
+before creating a commit.
 
 Q3: How can you use the staging area to make sure you have one commit per logical change?
 Answer:
