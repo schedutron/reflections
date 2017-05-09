@@ -1,0 +1,5 @@
+Q1: When would you want to use a remote repository rather than keeping all your work local?
+Answer:
+I would want to use a remote repo rather than keeping all my work local when I would want to share my project with others, so 
+that they can provide suggestions and collaborate with me on the project. Also, I would like to have a remote repo as a backup 
+so that my project is safe in GitHub servers (if I save my 'remote' on GitHub) even if I somehow lose the local project repo.
