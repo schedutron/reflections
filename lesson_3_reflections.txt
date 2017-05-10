@@ -37,3 +37,13 @@ the git fetch command. Having a copy of the last known state of the remote store
 going to be offline for a while (e.g, about to get on a plane), I can update my local copy of the remote branch before
 I leave, so I'll have access to any updates that have been made to the remote since I last synced up, while still being
 offline.
+
+Q5: How would you collaborate without using Git and GitHub? What would be easier, and what would be harder?
+Answer:
+Although now it seems very difficult to collaborate without Git and GitHub, the nearest alternative I'd use is Dropbox.
+Dropbox will allow me to share my project with my friends and would also provide some online version control. Furthermore,
+it would allow automatic syncing, which would be okay if not much conflicts arise. However, it could be a problem in
+instances of conflicts, and Dropbox may not properly address the issues. Also, although I'd be able to collaborate, my
+project won't be "public" in the sense that people beyond my collaborators would not be able to fork it and provide easy
+feedback. Still, they'd be able to download my project and use and customize it as per their wishes. Also, things like
+pull requests won't be available on Dropbox, so it makes the suggestions part difficult.
