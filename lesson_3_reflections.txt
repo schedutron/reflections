@@ -47,3 +47,15 @@ instances of conflicts, and Dropbox may not properly address the issues. Also, a
 project won't be "public" in the sense that people beyond my collaborators would not be able to fork it and provide easy
 feedback. Still, they'd be able to download my project and use and customize it as per their wishes. Also, things like
 pull requests won't be available on Dropbox, so it makes the suggestions part difficult.
+
+Q6: When would you want to make changes in a separate branch rather than directly in master? What benefit does each approach
+have?
+Answer:
+I would like to make changes in a separate branch when, e.g, I'd like to introduce a significant new feature to my project.
+Separate branch allows some distinguish-ion and thus some focus on the feature. It also has the advantage that my original
+code on master won't break and would work fine as usual. Because it may happen that my feature breaks the code for a while.
+Once the code with new features starts running fine, I can merge this branch to the master branch so that it also gets featured.
+Branching also allows proper collaboration. Multiple people committing on the same master branch may create confusion and it
+might also happen that the code on master breaks. But it's okay to commit directly on master when your update is small and you
+are quite sure that it would neither break your master code nor cause significant problems with your collaborators. So committing
+directly on master has the advantage of being simple :) No stuff like branching and merging involved.
