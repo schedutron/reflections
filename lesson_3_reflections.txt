@@ -29,3 +29,11 @@ Branching out for customized spinoffs may now create confusion as to who's a col
 spinoffs. It might also be tedious to track lots of people with different branching purposes. So for stuff like
 spinoffs, forking is used. Also, forking and cloning operate on entire repos while branching operates on commits
 within a single repository.
+
+Q4: What is the benefit of having a copy of the last known state of the remote stored locally?
+Answer:
+It turns out that I can update just the local copy of the remote branch, leaving my actual local version alone by running
+the git fetch command. Having a copy of the last known state of the remote stored locally helps because this way, if I'm
+going to be offline for a while (e.g, about to get on a plane), I can update my local copy of the remote branch before
+I leave, so I'll have access to any updates that have been made to the remote since I last synced up, while still being
+offline.
